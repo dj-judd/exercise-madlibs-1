@@ -50,6 +50,23 @@ def greet_person():
 
     return render_template("compliment.html", person=player, compliment=compliment)
 
+@app.route("/game")
+def show_madlib_form():
+
+    wants_to_play_game = request.args.get("RadioSelection")
+    
+    if wants_to_play_game == "yes":
+        return render_template("game.html")
+
+    else:
+        # go to a page called goodbye.html
+        return render_template("goodbye.html")
+
+@app.route("/madlib")
+def show_madlib(): 
+
+    re
+
 
 if __name__ == "__main__":
     # Setting debug=True gives us error messages in the browser and also
