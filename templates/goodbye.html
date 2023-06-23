@@ -1,16 +1,14 @@
-<!doctype html>
-<html>
-<head>
-  <title>Goodbye!</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<h1>See you later!</h1>
+{% block title %}Goodbye!{% endblock %}
 
-<form action="/">
-  <p>Back to the home page?</p>>
-  <input type="submit">
-</form>
+{% block content %}
 
-</body>
-</html>
+  <h2>See you later!</h2>
+
+  <form action="/hello">
+    <p>Back to the home page?</p>>
+    <input type="submit">
+  </form>
+
+{% endblock %}
