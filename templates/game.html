@@ -6,19 +6,31 @@
 
 <h2>Let's play a game!</h2>
 
-<form action="/madlib">
-  What is your name? <input type="text" name="name"><br>
-  <!-- Type in a color? <input type="text" name="color"><br> -->
-  <label for="color"> Choose a color: </label>
-  <select name="color" id = "color">
-    <option value="red">Red</option>
-    <option value="green">Green</option>
-    <option value="blue">Blue</option>
-  </select><br>
-  Type in a noun? <input type="text" name="noun"><br>
-  Type in a adjective? <input type="text" name="adjective"><br>
-    
-  <input type="submit">
-</form>
+<div class="container">
+  <form action="/madlib">
+    <div class="form-line">
+      <p>What is your name?</p><input type="text" name="name">
+    </div>
+    <!-- Type in a color? <input type="text" name="color"><br> -->
+    <div class="form-line">
+      <label for="color" > Choose a color: </label>
+      <select name="color" id = "color">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </div>
+    <div class="form-line">
+      <p>Type in a noun?</p><input type="text" name="noun">
+    </div>
+    <div class="form-line">
+      <p>Type in a adjective?</p><input type="text" name="adjective">
+    </div>
+      
+    <div class="form-line">
+      <input type="submit">
+    </div>
+  </form>
+</div>
 
 {% endblock %}

@@ -26,11 +26,11 @@ AWESOMENESS = [
 ]
 
 
-@app.route("/")
-def start_here():
+@app.route("/index")
+def landing_page():
     """Display homepage."""
 
-    return "Hi! This is the home page."
+    return render_template("index.html")
 
 
 @app.route("/hello")

@@ -4,9 +4,9 @@
 
 {% block content %}
 
-    Hi {{ person }}! I think you're {{ compliment }}!
-    Would you like to play a game?
-    <form action="/game">
+<p>Hi {{ person }}! I think you're {{ compliment }}!
+Would you like to play a game?</p>
+    <form action="/game" class="input-form">
       <input type = "radio" id ="yes" name = "RadioSelection" value="yes"> 
       <label for = "yes">Yes</label><br>
       <input type = "radio" id= "no" name = "RadioSelection" value = "no">
